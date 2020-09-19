@@ -1,0 +1,7 @@
+<app-recipe-detail
+  *ngIf="selectedRecipe; else infoText"
+  [recipe]="selectedRecipe"
+></app-recipe-detail>
+<ng-template #infoText>
+  <h2>Please select a Recipe!</h2>
+</ng-template>
